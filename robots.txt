@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://f-r-r-entertainment.github.io/sitemap.xml

@@ -1,0 +1,24 @@
+# Validates the HTML and checks local links on every push and pull request.
+name: Validación
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validar:
+    name: HTML y enlaces
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 24
+      - name: Validar HTML
+        run: npx --yes html-validate@9 index.html 404.html
+      - name: Revisar enlaces locales
+        run: node .github/scripts/check-links.mjs . index.html 404.html
