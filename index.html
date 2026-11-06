@@ -8,11 +8,40 @@
       content="FRR Soluciones IT: tecnología, infraestructura y soporte para acompañar el crecimiento de tu empresa."
     >
     <meta name="theme-color" content="#090a0c">
-    <link rel="icon" type="image/png" href="assets/Logo.png" />
     <title>FRR Soluciones IT | Tecnología que impulsa</title>
+    <link rel="canonical" href="https://f-r-r-entertainment.github.io/">
+
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="FRR Soluciones IT">
+    <meta property="og:title" content="FRR Soluciones IT | Tecnología que impulsa">
+    <meta property="og:description" content="Tecnología, infraestructura y soporte para acompañar el crecimiento de tu empresa.">
+    <meta property="og:url" content="https://f-r-r-entertainment.github.io/">
+    <meta property="og:image" content="https://f-r-r-entertainment.github.io/assets/og-frr.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Logo de F.R.R. junto al texto FRR Soluciones IT">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="icon" type="image/png" href="assets/Logo.png">
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap">
     <link rel="preload" as="image" href="assets/LOGO_FRR.png">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/main.js" defer></script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "FRR Soluciones IT",
+        "alternateName": "F.R.R. Entertainment",
+        "url": "https://f-r-r-entertainment.github.io/",
+        "logo": "https://f-r-r-entertainment.github.io/assets/LOGO_FRR.png",
+        "email": "entertainmentfrr@gmail.com",
+        "description": "Tecnología, infraestructura y soporte para acompañar el crecimiento de tu empresa."
+      }
+    </script>
   </head>
   <body>
     <a class="skip-link" href="#contenido">Saltar al contenido</a>
@@ -21,7 +50,7 @@
       <div class="container nav-wrap">
         <a class="brand" href="#inicio" aria-label="FRR Soluciones IT, inicio">
           <span class="brand-mark">
-            <img src="assets/Logo.png" alt="">
+            <img src="assets/Logo.png" alt="" width="343" height="287">
           </span>
           <span class="brand-copy">
             <span class="brand-name">F.R.R.</span>
@@ -71,12 +100,12 @@
             </div>
           </div>
 
-          <div class="hero-art" aria-label="Identidad visual de FRR">
+          <div class="hero-art">
             <div class="art-orbit orbit-one"></div>
             <div class="art-orbit orbit-two"></div>
             <div class="art-glow"></div>
             <div class="logo-frame">
-              <img src="assets/LOGO_FRR.png" alt="F.R.R. Entertainment" width="1680" height="944">
+              <img src="assets/LOGO_FRR.png" alt="Logo de F.R.R. Entertainment" width="1672" height="941" fetchpriority="high">
             </div>
             <div class="art-label label-top">
               <span class="label-dot"></span>
@@ -202,12 +231,14 @@
               Cuéntanos qué necesita tu empresa. Podemos empezar por una
               conversación y encontrar juntos el mejor camino.
             </p>
-            <a class="button button-light" href="#soluciones">
-              Explorar soluciones <span aria-hidden="true">↗</span>
-            </a>
-            <a class="contact-email" href="mailto:entertainmentfrr@gmail.com">
-              entertainmentfrr@gmail.com <span aria-hidden="true">↗</span>
-            </a>
+            <div class="contact-actions">
+              <a class="button button-light" href="mailto:entertainmentfrr@gmail.com?subject=Consulta%20desde%20el%20sitio%20de%20FRR">
+                Escríbenos <span aria-hidden="true">↗</span>
+              </a>
+              <a class="contact-email" href="mailto:entertainmentfrr@gmail.com">entertainmentfrr@gmail.com</a>
+              <button class="copy-email" type="button" data-email="entertainmentfrr@gmail.com">Copiar email</button>
+              <span class="copy-status" role="status" aria-live="polite"></span>
+            </div>
           </div>
           <div class="contact-symbol" aria-hidden="true">
             <div class="contact-ring ring-outer"></div>
@@ -223,14 +254,17 @@
       <div class="container footer-main">
         <a class="brand footer-brand" href="#inicio" aria-label="FRR Soluciones IT, volver al inicio">
           <span class="brand-mark">
-            <img src="assets/Logo.png" alt="">
+            <img src="assets/Logo.png" alt="" width="343" height="287" loading="lazy">
           </span>
           <span class="brand-copy">
             <span class="brand-name">F.R.R.</span>
             <span class="brand-caption">SOLUCIONES IT</span>
           </span>
         </a>
-        <p>Tecnología con propósito.<br>Soluciones para seguir avanzando.</p>
+        <div class="footer-copy">
+          <p>Tecnología con propósito.<br>Soluciones para seguir avanzando.</p>
+          <a class="footer-email" href="mailto:entertainmentfrr@gmail.com">entertainmentfrr@gmail.com</a>
+        </div>
         <a class="back-to-top" href="#inicio">Volver arriba <span aria-hidden="true">↑</span></a>
       </div>
       <div class="container footer-bottom">

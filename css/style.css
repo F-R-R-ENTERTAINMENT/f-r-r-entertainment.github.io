@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap");
-
 :root {
   color-scheme: dark;
   --ink: #f5f3ef;
@@ -445,7 +443,7 @@ h3 {
 }
 
 .label-bottom {
-  bottom: 55px;
+  bottom: 4px;
   left: -14px;
   color: var(--ink);
   font-size: 10px;
@@ -965,10 +963,10 @@ h3 {
   height: 39px;
 }
 
-.footer-main > p {
+.footer-copy p {
   margin: 0;
   color: #85837f;
-  font-size: 10px;
+  font-size: 12px;
   line-height: 1.7;
 }
 
@@ -977,7 +975,7 @@ h3 {
   align-items: center;
   gap: 12px;
   color: #c7c4be;
-  font-size: 10px;
+  font-size: 12px;
 }
 
 .back-to-top span {
@@ -992,8 +990,8 @@ h3 {
   justify-content: space-between;
   gap: 18px;
   border-top: 1px solid rgba(255, 255, 255, 0.07);
-  color: #666561;
-  font-size: 9px;
+  color: #807e7a;
+  font-size: 11px;
 }
 
 .footer-accent {
@@ -1259,7 +1257,7 @@ h3 {
     padding-block: 22px;
   }
 
-  .footer-main > p {
+  .footer-copy p {
     order: 1;
     width: 100%;
   }
@@ -1302,4 +1300,113 @@ h3 {
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
   }
+}
+
+/* Encabezado fijo con fondo al desplazarse */
+.site-header {
+  position: fixed;
+  transition: background-color 220ms ease, border-color 220ms ease;
+}
+
+.site-header.is-scrolled {
+  border-bottom-color: rgba(255, 255, 255, 0.1);
+  background: rgba(9, 10, 12, 0.86);
+  -webkit-backdrop-filter: blur(14px);
+  backdrop-filter: blur(14px);
+}
+
+.site-nav > a[aria-current="true"]:not(.nav-cta) {
+  color: var(--orange);
+}
+
+/* Contacto */
+.contact-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 14px 20px;
+}
+
+.contact-actions .contact-email {
+  margin-left: 0;
+  font-size: 14px;
+}
+
+.copy-email {
+  min-height: 34px;
+  padding: 0 14px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: var(--ink);
+  background: transparent;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: border-color 180ms ease, color 180ms ease;
+}
+
+.copy-email:hover,
+.copy-email:focus-visible {
+  border-color: var(--orange);
+  color: var(--orange);
+}
+
+.copy-status {
+  color: var(--orange);
+  font-size: 12px;
+}
+
+/* Pie */
+.footer-copy {
+  display: grid;
+  gap: 8px;
+}
+
+.footer-email {
+  color: #c7c4be;
+  font-size: 12px;
+  text-decoration: underline;
+  text-decoration-color: rgba(235, 155, 69, 0.5);
+  text-underline-offset: 4px;
+}
+
+.footer-email:hover,
+.footer-email:focus-visible {
+  color: var(--orange);
+}
+
+/* Página 404 */
+.not-found {
+  display: grid;
+  min-height: 100vh;
+  place-items: center;
+  padding: 120px 24px 80px;
+  text-align: center;
+}
+
+.not-found .brand,
+.not-found .eyebrow {
+  justify-content: center;
+}
+
+.not-found .brand {
+  margin-bottom: 36px;
+}
+
+.not-found h1 {
+  margin: 18px 0 14px;
+  font-family: var(--font-display);
+  font-size: clamp(40px, 7vw, 72px);
+  letter-spacing: -0.04em;
+  line-height: 1;
+}
+
+.not-found h1 span {
+  color: var(--orange);
+}
+
+.not-found p {
+  max-width: 420px;
+  margin: 0 auto 28px;
+  color: var(--muted);
+  line-height: 1.7;
 }
